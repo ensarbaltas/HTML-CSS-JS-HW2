@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /* 6. Communist Censorship
+
+    Given the array of strings X = ['Man', 'I','Love','The','Restart',
+    'Bootcamp'], replace every letter of the word Bootcamp with *, 
+    so the output would be ['Man', 'I','Love','The','Turing','********']. 
+    Then make your algorithm work for any word of your choice
+    */
+
+
+    <script>
+        x = ['Man', 'I','Love','The','Restart','Bootcamp'];
+        var y = "";
+
+        for(var i=0; i<x.length; i++){
+            if( x[i] === "Restart" ){
+                x[i]="Turing";
+            }
+            if(x[i] === "Bootcamp"){
+                var y = "";
+                for(var j=0; j<=x[i].length; j++){
+                    y=y+"*";
+
+                }
+                    x[i]=y;
+                }
+            }
+        
+            console.log(x)  
+    </script>
+
+
+
+
+</body>
+</html>
